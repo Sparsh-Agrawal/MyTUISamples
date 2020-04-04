@@ -44,8 +44,9 @@ elif c==3:
 elif c==4:
     print("Enter file name : ",end="")
     f=input()
-    os.system("touch "+f)
+    os.system("touch {}".format(f))
     print("File successfully created")
+    print()
 elif c==5:
     os.system(live)
     #print("Exiting...")
